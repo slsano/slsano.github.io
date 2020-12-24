@@ -575,8 +575,6 @@ Preloader - Back to top
 
 
 
-
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -643,12 +641,13 @@ section{
 
 .column-title::after {
   content: "";
-  width: 150px;
+  width: 5rem;
   height: 5px;
   display: inline-block;
   background: var(--black-color);
   margin: 4px 10px;
 }
+
 
 
 
@@ -798,11 +797,6 @@ section{
   background-color: #18d26e !important;
 }
 
-@media (max-width: 767px) {
-  .Serv-carousel {
-    margin: 30px 10px;
-  }
-}
 
 
 
@@ -972,6 +966,7 @@ section{
   .site-footer p {
     font-size: var(--base-font-size);
     color: var(--white-color);
+    text-align: center;
   }
 
   .contact .fa,
