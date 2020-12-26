@@ -1,6 +1,7 @@
-/**
-* Author: Samuel SANO
-* Email: slsano@protonmail.com;
+/*
+Author: Samuel SANO
+Email: slsano@protonmail.com
+Date of Completion: December 24, 2020
 */
 
 
@@ -32,11 +33,26 @@ Table Of ConTents
 
   @font-face {
       font-family: 'metropolis';
-      src: url('../assets/fonts/metropolis-regular.otf') format('otf'),
-          url('../assets/fonts/metropolis-bold.otf') format('otf');
-      font-weight: bold;
-      font-style: normal;
+      src: url('../assets/fonts/Metropolis-Regular.otf') format('otf'),
+      url('../assets/fonts/Metropolis-Bold.otf') format('otf');
   }
+
+  @font-face{
+    font-family: 'amatemora';
+    src: url('..assets/fonts/Amatemora.woff') format('woff'),
+    url('..assets/fonts/Amatemora.woff2') format('woff2');
+  }
+
+  @font-face{
+    font-family: 'wishline';
+    src: url(../assets/fonts/Wishline.otf) format('otf');
+  }
+
+  @font-face{
+    font-family: 'metropolis';
+      src: url('../assets/fonts/Ontel.otf') format('otf');
+  }
+
 
   :root {
     --primary-color:        #005aff;
@@ -66,7 +82,8 @@ Table Of ConTents
     --menu-font-size:       14px;
 
     --border-radius-large:  100%;
-    --border-radius-small:  5px;
+    --border-radius-circle: 50%;
+    --border-radius-small:  8%;
   }
 
 
@@ -186,7 +203,7 @@ Table Of ConTents
   height: 40px;
   width: 40px;
   font-size: 2.0rem;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   line-height: 1.4;
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
@@ -245,7 +262,7 @@ Preloader - Back to top
   right: 30px;
   bottom: 50px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
 }
 
 /*------/ Back to top button /------*/
@@ -259,7 +276,7 @@ Preloader - Back to top
   text-align: center;
   line-height: 1;
   font-size: 16px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   right: 15px;
   bottom: 15px;
   transition: background 0.5s;
@@ -301,7 +318,7 @@ Preloader - Back to top
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
   border-top: 6px solid var(--primary-color);
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   width: 60px;
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
@@ -752,7 +769,7 @@ section{
   width: 100px;
   font-size: 4rem;
   line-height: 1.55;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
@@ -789,7 +806,7 @@ section{
   margin: 0 5px;
   width: 12px;
   height: 12px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
@@ -889,7 +906,7 @@ section{
 .php-email-form .loading:before {
   content: "";
   display: inline-block;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
@@ -919,7 +936,7 @@ section{
 }
 
 .php-email-form button[type="submit"] {
-  background: #0078ff;
+  background: var(--primary-color);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -927,7 +944,8 @@ section{
 }
 
 .php-email-form button[type="submit"]:hover {
-  background: #3393ff;
+  background: var(--primary-color);
+  opacity: 0.9;
 }
 
 @-webkit-keyframes animate-loading {
